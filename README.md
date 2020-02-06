@@ -39,6 +39,7 @@ export no_proxy=localhost,127.0.0.0/8,127.0.1.1
 ```
 docker-compose up
 ```
+※プロセスをdetach（バックグラウンド動作）にする場合は、 `-d` を末尾に追加してください。
 
 ## npm の設定
 
