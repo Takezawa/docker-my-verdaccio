@@ -21,25 +21,13 @@ https_proxy: http://192.168.1.99:8080/
 no_proxy: localhost, 127.0.0.1
 ```
 
-bashなどのコマンドラインでproxy設定は下記の様にすれば良いかと思いまう。
-```bash
-export all_proxy=http://192.168.1.99:8080
-export http_proxy=http://192.168.1.99:8080
-export https_proxy=http://192.168.1.99:8080
-export ALL_PROXY=http://192.168.1.99:8080
-export HTTP_PROXY=http://192.168.1.99:8080
-export HTTPS_PROXY=http://192.168.1.99:8080
-export NO_PROXY=localhost,127.0.0.0/8,127.0.1.1
-export no_proxy=localhost,127.0.0.0/8,127.0.1.1
-```
-
-
 ## 起動
 
 ```
 docker-compose up
 ```
 ※プロセスをdetach（バックグラウンド動作）にする場合は、 `-d` を末尾に追加してください。
+※２回目以降の起動は、upをstartに変更してください。
 
 ## npm の設定
 
